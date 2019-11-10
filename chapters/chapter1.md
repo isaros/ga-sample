@@ -68,12 +68,15 @@ Don't forget to calculate the weighted average of both Gini impurity of the leaf
 
 <exercise id="5" title="Next lesson">
 
-Now that we have seen the basics of a decision tree, even though it is simple to compute, it comes with some disadvantages :
 
-- It is easily prone to overfitting
-- If the data has a high variance, then the model can get unstable
-- Complicated decision trees tend to get a low bias, which makes it harder to work with new data
+Now that we have seen the basics of CART, even though it is simple and easy to understand it comes with some disadvantages :
 
-To remedy this, we will introduce next the concepts of bagging and boosting and see two more types of classifiers : Adaboost and RandomForest.
+- However they have many disadvantages:
+- Unstable
+- Often inaccurate
+- Prone to overfitting
+- Complex tree => low bias => low generalisation
+
+To remedy this, we will get in touch with Ensemble Learning and introduce next the concepts of bagging and boosting and see two more types of classifiers : Adaboost and RandomForest.
 
 </exercise>

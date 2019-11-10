@@ -4,52 +4,42 @@ type: slides
 
 # Introduction to Decision Trees
 
+<p align="center">
+<img src="slide1.png" class="center" alt="slide" width="80%">
+</p>
 ---
 
-# What is a Decision Tree ?
-
-Tree shaped diagram used to predict a target value by learning simple decision rules inferred from the data features.
+# What about cliché: Classroom spot:predictor of success?
 
 <p align="center">
-<img src="img_slide1.png" class="center" alt="slide1" width="40%">
+<img src="slide2.png" class="center" alt="slide" width="80%">
 </p>
 
 ---
 
-# From a table to a decision tree
-
-| Windy | Sunny | Hot   | Won Game |
-|-------|-------|-------|----------|
-| False | False | True  | False    |
-| True  | True  | True  | False    |
-| False | True  | False | True     |
-| False | False | False | True     |
-
 <p align="center">
-<img src="img_slide2.png" class="center" alt="slide1" width="30%">
+<img src="slide3.png" class="center" alt="slide" width="100%">
 </p>
 
 ---
 
-# From a table to a decision tree
+<p align="center">
+<img src="slide4.png" class="center" alt="slide" width="100%">
+</p>
 
-| Windy | Sunny | Hot   | Won Game |
-|-------|-------|-------|----------|
-| False | False | True  | False    |
-| True  | True  | True  | False    |
-| False | True  | False | True     |
-| False | False | False | True     |
+---
+# Let's Draw a decision tree
 
 <p align="center">
-<img src="img_slide3.png" class="center" alt="slide1" width="60%">
+You have two minutes to draw a decision tree from the split presented before
 </p>
 
 ---
 
-# Gini Impurity
+# Let's Draw a decision tree
 
 <p align="center">
-<img src="img_slide4.png" class="center" alt="slide1" width="60%">
+<img src="slide6.png" class="center" alt="slide" width="60%">
 </p>
 
 ---
@@ -57,97 +47,108 @@ Tree shaped diagram used to predict a target value by learning simple decision r
 # Gini Impurity
 
 <p align="center">
-<img src="img_slide5.png" class="center" alt="slide1" width="60%">
+<img src="slides7.png" class="center" alt="slide" width="60%">
 </p>
 
 ---
 
-# Giny Impurity
+# Giny Impurity for the front node
 
 <p align="center">
-<img src="img_slide6.png" class="center" alt="slide1" width="60%">
+<img src="slide8.png" class="center" alt="slide" width="60%">
 </p>
 
 ---
 
-# What is the Giny Impurity of the Windy node ?
-
-To calculate the Gini impurity of a node, we compute the weighted average of Gini impurities for the leaf nodes.
+# Giny Impurity for the left node
 
 <p align="center">
-<img src="img_slide6.png" class="center" alt="slide1" width="60%">
-</p>
-<p align="center">
-<img src="img_slide7.png" class="center" alt="slide1" width="60%">
+<img src="slide9.png" class="center" alt="slide" width="80%">
 </p>
 
 ---
-
-# Choosing the right seperating node
+# Choose your root
 
 <p align="center">
-<img src="img_slide8.png" class="center" alt="slide1" width="60%">
+<img src="slide10.png" class="center" alt="slide" width="80%">
+</p>
+
+
+---
+# Grow the tree
+
+<p align="center">
+<img src="slide11.png" class="center" alt="slide" width="80%">
 </p>
 
 ---
-
-# Once we choose one, we do the same for the left/right children nodes
+# Stop when Gini increase
 
 <p align="center">
-<img src="img_slide9.png" class="center" alt="slide1" width="40%">
+<img src="slide12.png" class="center" alt="slide" width="80%">
 </p>
 
 ---
-
-# But when do we stop ?
+# Full Tree
 
 <p align="center">
-<img src="img_slide10.png" class="center" alt="slide1" width="30%">
+<img src="slide13.png" class="center" alt="slide" width="80%">
 </p>
 
 ---
+# Construction
 
-# But when do we stop ?
-
-<p align="center">
-<img src="img_slide11.png" class="center" alt="slide1" width="31%">
-</p>
+* Start from the root node and compute Gini to choose the attribute
+* Repeat the the same process from the leaf node
+* Stop if the Gini impurity increase
+* Stop when you reach the max depth
+* Prune with a measure of residual_error/model_complexity
 
 ---
+# Take away
 
+* Supervised learning for classification or regression 
+* Split the input space into cuboids  
+* Split with to Gini impurity or Information Gain 
+* Stop on Gini = automatic feature selection 
+
+---
 # What about numerical values ?
 
-| Windy | Sunny | Hot   | Temp | Won Game |
-|-------|-------|-------|------|----------|
-| False | False | True  | 11   | False    |
-| True  | True  | True  | 14   | False    |
-| False | True  | False | 19   | True     |
-| False | False | False | 25   | True     |
+| AGE | h-homework/week | Pass test |
+|----|----|-------|
+| 20 | 0  | False |
+| 25 | 2  | True  |
+| 30 | 20 | False |
+| 33 | 10 | False |
+| 40 | 20 | True  |
 
 - Sort the values
-- Compute the average temperature between games
-- Compute the Gini impurity for each average temperatures
+- Compute the average betweens adjacent instances
+- Compute the Gini impurity for each average interval
 
 <p align="center">
-<img src="img_slide12.png" class="center" alt="slide1" width="20%">
+<img src="slide14.png" class="center" alt="slide" width="20%">
 </p>
 
 ---
 
 # What about categorical values ?
 
-| Color | Won Game |
+| Marker Color | Pass Test |
 |-------|-------|
-| red | False |
-| blue  | True  |
-| green | True  |
-| blue | False |
+| Red | False |
+| Black  | True  |
+| Blue | True  |
+| Red | False |
 
-- Calculate the Gini impurity for each one as well as for each possible combination except for the one with every color choice.
-
-<p align="center">
-<img src="img_slide13.png" class="center" alt="slide1" width="40%">
-</p>
+- Calculate the Gini impurity for each one as well as for each possible combination:
+    - Blue
+    - Black
+    - Red
+    - Black & Red
+    - Blue & Red
+    - Blue & Black
 
 ---
 
