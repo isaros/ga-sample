@@ -12,13 +12,13 @@ type: slides
 # What about cliché: Classroom spot:predictor of success?
 
 <p align="center">
-<img src="slide2.png" class="center" alt="slide" width="80%">
+<img src="slide2.png" class="center" alt="slide" width="60%">
 </p>
 
 ---
 
 <p align="center">
-<img src="slide3.png" class="center" alt="slide" width="100%">
+<img src="slide3.png" class="center" alt="slide" width="60%">
 </p>
 
 ---
@@ -39,7 +39,7 @@ You have two minutes to draw a decision tree from the split presented before
 # Let's Draw a decision tree
 
 <p align="center">
-<img src="slide6.png" class="center" alt="slide" width="60%">
+<img src="slide6.png" class="center" alt="slide" width="80%">
 </p>
 
 ---
@@ -47,7 +47,7 @@ You have two minutes to draw a decision tree from the split presented before
 # Gini Impurity
 
 <p align="center">
-<img src="slides7.png" class="center" alt="slide" width="60%">
+<img src="slide7.png" class="center" alt="slide" width="60%">
 </p>
 
 ---
@@ -55,7 +55,7 @@ You have two minutes to draw a decision tree from the split presented before
 # Giny Impurity for the front node
 
 <p align="center">
-<img src="slide8.png" class="center" alt="slide" width="60%">
+<img src="slide8.png" class="center" alt="slide" height="80%">
 </p>
 
 ---
@@ -149,6 +149,7 @@ You have two minutes to draw a decision tree from the split presented before
     - Black & Red
     - Blue & Red
     - Blue & Black
+- No need to compute the combination which include all the categories. 
 
 ---
 

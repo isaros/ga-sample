@@ -42,21 +42,21 @@ Check the documentation of scikit-learn to build a DecisionTree classifier [here
 
  <exercise id="4" title="Quizz 1">
 
-What is the Gini index of the *Hot* node ?
+What is the Gini index of the *Colour Marker* node ?
 
 <p align="center">
-<img src="gini.jpg" class="center" alt="giniex" width="80%">
+<img src="giniquizz.png" class="center" alt="giniex" width="80%">
 </p>
 
 <choice>
 
-<opt text="0.28" correct="true">
+<opt text="0.23 correct="true">
 
 Good job!
 
 </opt>
 
-<opt text="0.52">
+<opt text="0.48">
 
 Don't forget to calculate the weighted average of both Gini impurity of the leaf nodes.
 
