@@ -55,7 +55,7 @@ You have two minutes to draw a decision tree from the split presented before
 # Giny Impurity for the front node
 
 <p align="center">
-<img src="slide8.png" class="center" alt="slide" wi="50%">
+<img src="slide8.png" class="center" alt="slide" width="50%">
 </p>
 
 ---
