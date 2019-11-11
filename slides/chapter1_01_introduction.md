@@ -18,13 +18,13 @@ type: slides
 ---
 
 <p align="center">
-<img src="slide3.png" class="center" alt="slide" width="60%">
+<img src="slide3.png" class="center" alt="slide" width="70%">
 </p>
 
 ---
 
 <p align="center">
-<img src="slide4.png" class="center" alt="slide" width="100%">
+<img src="slide4.png" class="center" alt="slide" width="70%">
 </p>
 
 ---
@@ -55,7 +55,7 @@ You have two minutes to draw a decision tree from the split presented before
 # Giny Impurity for the front node
 
 <p align="center">
-<img src="slide8.png" class="center" alt="slide" height="80%">
+<img src="slide8.png" class="center" alt="slide" wi="50%">
 </p>
 
 ---
@@ -149,7 +149,7 @@ You have two minutes to draw a decision tree from the split presented before
     - Black & Red
     - Blue & Red
     - Blue & Black
-- No need to compute the combination which include all the categories. 
+- No need to compute the combination which include all the categories.
 
 ---
 
